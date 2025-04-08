@@ -1,4 +1,4 @@
-# Link Analytics Dashboard
+# Shorts - URL Shortner
 A full-stack Link Shortener + Analytics Dashboard built with:
 
 - Frontend: React.js + Tailwind CSS
