@@ -15,7 +15,7 @@ const ClickChart = () => {
 
   const fetchClickStats = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/links/stats/daily', {
+      const res = await fetch('https://shorts-url-shortner.onrender.com/api/links/stats/daily', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
         },

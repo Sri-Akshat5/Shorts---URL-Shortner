@@ -15,7 +15,7 @@ const CreateLinkForm = ({ onLinkCreated }) => {
     setShortUrl(null);
 
     try {
-      const res = await fetch('http://localhost:5000/api/links/create', {
+      const res = await fetch('https://shorts-url-shortner.onrender.com/api/links/create', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

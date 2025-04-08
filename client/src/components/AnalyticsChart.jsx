@@ -17,7 +17,7 @@ const AnalyticsChart = () => {
 
   const fetchAnalytics = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/links/mylinks', {
+      const res = await fetch('https://shorts-url-shortner.onrender.com/api/links/mylinks', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
         },

@@ -9,7 +9,7 @@ const DevicePieChart = () => {
 
   const fetchDeviceStats = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/links/devices', {
+      const res = await fetch('https://shorts-url-shortner.onrender.com/api/links/devices', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
         },

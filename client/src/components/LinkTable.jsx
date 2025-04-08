@@ -13,7 +13,7 @@ const LinkTable = () => {
   const fetchLinks = async () => {
     setLoading(true);
     try {
-      const res = await fetch('http://localhost:5000/api/links/mylinks', {
+      const res = await fetch('https://shorts-url-shortner.onrender.com/api/links/mylinks', {
         headers: { Authorization: `Bearer ${token}` },
       });
       const data = await res.json();
@@ -26,7 +26,7 @@ const LinkTable = () => {
 
   const deleteLink = async (id) => {
     try {
-      await fetch(`http://localhost:5000/api/links/${id}`, {
+      await fetch(`https://shorts-url-shortner.onrender.com/api/links/${id}`, {
         method: 'DELETE',
         headers: { Authorization: `Bearer ${token}` },
       });
@@ -38,7 +38,7 @@ const LinkTable = () => {
 
   const updateLink = async (id) => {
     try {
-      await fetch(`http://localhost:5000/api/links/${id}`, {
+      await fetch(`https://shorts-url-shortner.onrender.com/api/links/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
