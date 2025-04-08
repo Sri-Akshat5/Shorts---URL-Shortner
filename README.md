@@ -30,3 +30,36 @@ A full-stack Link Shortener + Analytics Dashboard built with:
 - Protected routes using authMiddleware on the backend
 - Token stored in localStorage
 
+## Test Credentials
+- email: test@gmail.com
+- password: Test@123
+
+## Setup Instructions
+### Clone the repo
+```
+git clone https://github.com/Sri-Akshat5/Shorts---URL-Shortner.git
+cd link-analytics-dashboard
+```
+### Environment Variables
+```
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+BASE_URL=https://your-app.onrender.com
+```
+### Install dependencies
+- Backend:
+```
+cd server
+npm install
+```
+- Frontend:
+```
+cd client
+npm install
+```
+### Run locally
+```
+Backend: node server.js
+Frontend: npm run dev
+```
